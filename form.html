@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Form Top Up | Dhanorix Market</title>
+    <meta name="description" content="Lengkapi data top up game di Dhanorix Market dengan proses cepat, aman, dan mudah.">
+    <meta name="theme-color" content="#0d1117">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+
+    <!-- ====================================================== -->
+    <!-- Main Wrapper -->
+    <!-- ====================================================== -->
+
+    <div class="page-wrapper">
+
+        <!-- ================================================== -->
+        <!-- Header -->
+        <!-- ================================================== -->
+
+        <header class="page-header">
+
+            <div class="container">
+
+                <a href="index.html" class="back-button" aria-label="Kembali">
+                    ← Kembali
+                </a>
+
+            </div>
+
+        </header>
+
+        <!-- ================================================== -->
+        <!-- Main -->
+        <!-- ================================================== -->
+
+        <main class="main-content">
+
+            <div class="container">
+
+                <!-- ============================================== -->
+                <!-- Banner Game -->
+                <!-- ============================================== -->
+
+                <section class="game-banner" aria-labelledby="gameTitle">
+
+                    <div class="banner-image">
+
+                        <img
+                            id="gameImage"
+                            src="assets/default-game.png"
+                            alt="Banner Game">
+
+                    </div>
+
+                    <div class="banner-content">
+
+                        <h1 id="gameTitle">
+                            Memuat Game...
+                        </h1>
+
+                        <span class="safe-badge">
+                            ✔ Pembayaran Aman
+                        </span>
+
+                    </div>
+
+                </section>
+
+                <!-- ============================================== -->
+                <!-- Form Top Up -->
+                <!-- ============================================== -->
+
+                <form id="topupForm" autocomplete="off">
+
+                    <!-- ========================================== -->
+                    <!-- Step 1 -->
+                    <!-- ========================================== -->
+
+                    <section class="form-section" aria-labelledby="stepUser">
+
+                        <header class="section-header">
+                            <h2 id="stepUser">
+                                Step 1
+                            </h2>
+                            <p>Masukkan User ID</p>
+                        </header>
+
+                        <div class="form-group">
+
+                            <label for="userId">
+                                User ID
+                            </label>
+
+                            <input
+                                type="text"
+                                id="userId"
+                                name="userId"
+                                placeholder="Masukkan User ID"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="serverId">
+                                Server (Opsional)
+                            </label>
+
+                            <input
+                                type="text"
+                                id="serverId"
+                                name="serverId"
+                                placeholder="Masukkan Server ID">
+
+                        </div>
+
+                    </section>
+
+                    <!-- ========================================== -->
+                    <!-- Step 2 -->
+                    <!-- ========================================== -->
+
+                    <section class="form-section" aria-labelledby="stepNominal">
+
+                        <header class="section-header">
+
+                            <h2 id="stepNominal">
+                                Step 2
+                            </h2>
+
+                            <p>Pilih Nominal</p>
+
+                        </header>
+
+                        <div
+                            class="nominal-grid"
+                            id="nominalContainer">
+
+                            <!-- Diisi oleh form.js -->
+
+                        </div>
+
+                    </section>
+
+                    <!-- ========================================== -->
+                    <!-- Step 3 -->
+                    <!-- ========================================== -->
+
+                    <section class="form-section" aria-labelledby="stepPayment">
+
+                        <header class="section-header">
+
+                            <h2 id="stepPayment">
+                                Step 3
+                            </h2>
+
+                            <p>Metode Pembayaran</p>
+
+                        </header>
+
+                        <div
+                            class="payment-list"
+                            id="paymentContainer">
+
+                            <!-- Diisi oleh form.js -->
+
+                        </div>
+
+                    </section>
+
+                    <!-- ========================================== -->
+                    <!-- Ringkasan -->
+                    <!-- ========================================== -->
+
+                    <section class="order-summary" aria-labelledby="summaryTitle">
+
+                        <header class="section-header">
+
+                            <h2 id="summaryTitle">
+                                Ringkasan Pesanan
+                            </h2>
+
+                        </header>
+
+                        <div class="summary-item">
+
+                            <span>Game</span>
+
+                            <strong id="summaryGame">
+                                -
+                            </strong>
+
+                        </div>
+
+                        <div class="summary-item">
+
+                            <span>User ID</span>
+
+                            <strong id="summaryUser">
+                                -
+                            </strong>
+
+                        </div>
+
+                        <div class="summary-item">
+
+                            <span>Nominal</span>
+
+                            <strong id="summaryNominal">
+                                -
+                            </strong>
+
+                        </div>
+
+                        <div class="summary-item">
+
+                            <span>Pembayaran</span>
+
+                            <strong id="summaryPayment">
+                                -
+                            </strong>
+
+                        </div>
+
+                        <div class="summary-item total">
+
+                            <span>Total</span>
+
+                            <strong id="summaryTotal">
+                                Rp0
+                            </strong>
+
+                        </div>
+
+                    </section>
+
+                    <!-- ========================================== -->
+                    <!-- Submit -->
+                    <!-- ========================================== -->
+
+                    <div class="submit-area">
+
+                        <button
+                            type="submit"
+                            id="buyButton">
+
+                            Beli Sekarang
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- ====================================================== -->
+    <!-- Toast Container -->
+    <!-- ====================================================== -->
+
+    <div
+        id="toastContainer"
+        class="toast-container"
+        aria-live="polite"
+        aria-atomic="true">
+    </div>
+
+    <!-- JavaScript -->
+    <script src="form.js"></script>
+
+</body>
+</html>
